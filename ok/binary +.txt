@@ -1,0 +1,32 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+class A{
+    int num;
+    public:
+    A(){
+        
+    }
+    A(int x){
+     num=x;
+    }
+    void display(){
+        cout<<"value : "<<num<<endl;
+       
+    }
+     A operator+(A a){
+       return A(num+a.num);
+     }
+};
+
+int main() {
+    // Write C++ code here
+      A  obj1(2),obj2(5),a3;
+      obj1.display();
+      obj2.display();
+      //A a3;
+      a3=obj1+obj2;
+      a3.display();
+      return 0;
+} 
