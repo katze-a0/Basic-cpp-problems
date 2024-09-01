@@ -7,6 +7,7 @@ class element
     private:
     static int count;
     int data;
+
     public:
     element(){
         count++;
@@ -14,7 +15,7 @@ class element
     }
     ~element(){
         count--;
-        cout<<"Destroying element with value"<<data<<endl;
+        cout<<"Destroying element with value - "<<data<<endl;
     }
     static void showcount(){ //private static function
         cout<<"Number of elemnents are:  "<<count<<endl;
