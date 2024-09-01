@@ -1,5 +1,6 @@
 //finding no of possible paths to reach origin
 //problem of the day-001
+//exam preparation series
 
 #include<iostream>
 class solution
